@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Pree PDF Tool Pro – Merge, Split, Compress, JPG to PDF | Mun Developers</title>
+  <meta name="description" content="Free online PDF tools by Mun Developers: Merge PDFs, Split pages, Compress PDF size, and Convert JPG to PDF. 100% browser-based & private." />
+  <meta name="keywords" content="PDF merge, PDF split, JPG to PDF, compress PDF, Mun Developers, Karachi" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://example.netlify.app/" />
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Pree PDF Tool Pro – Free PDF Tools" />
+  <meta property="og:description" content="Merge, Split, Compress, and JPG→PDF in your browser. No upload needed." />
+  <meta property="og:url" content="https://example.netlify.app/" />
+  <meta property="og:image" content="https://example.netlify.app/og-image.png" />
+
+  <!-- JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Pree PDF Tool Pro",
+    "url":"https://example.netlify.app/",
+    "description":"Free PDF tools: merge, split, compress, and convert JPG to PDF in your browser.",
+    "publisher":{
+      "@type":"Organization",
+      "name":"Mun Developers",
+      "telephone":"+92 33 33 155 155",
+      "address":{
+        "@type":"PostalAddress",
+        "streetAddress":"near city court, nanakwara",
+        "addressLocality":"Karachi",
+        "addressCountry":"PK"
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="logo-dot"></div>
+      <div>
+        <h1>Pree PDF Tool Pro</h1>
+        <p>by Mun Developers • +92 33 33 155 155 • near city court, nanakwara, karachi, pakistan</p>
+      </div>
+    </div>
+    <nav class="nav">
+      <a href="#jpg">JPG → PDF</a>
+      <a href="#merge">Merge</a>
+      <a href="#split">Split</a>
+      <a href="#compress">Compress</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="notice">All processing happens in your browser. Files are not uploaded anywhere.</div>
+
+    <!-- JPG to PDF -->
+    <section id="jpg" class="card">
+      <h2>JPG → PDF</h2>
+      <p>Select one or more JPG/JPEG images. Each image becomes one PDF page.</p>
+      <input id="jpgFiles" type="file" accept="image/jpeg" multiple />
+      <button id="btnJpg">Convert & Download</button>
+      <p id="jpgMsg" class="muted"></p>
+    </section>
+
+    <!-- Merge PDFs -->
+    <section id="merge" class="card">
+      <h2>Merge PDFs</h2>
+      <p>Add 2 or more PDF files to combine.</p>
+      <input id="mergeFiles" type="file" accept="application/pdf" multiple />
+      <button id="btnMerge">Merge & Download</button>
+      <p id="mergeMsg" class="muted"></p>
+    </section>
+
+    <!-- Split PDFs -->
+    <section id="split" class="card">
+      <h2>Split / Extract Pages</h2>
+      <p>Upload one PDF and enter ranges like <code>1-3,5,7-9</code>.</p>
+      <input id="splitFile" type="file" accept="application/pdf" />
+      <input id="splitRanges" type="text" placeholder="1-3,5,7-9" />
+      <button id="btnSplit">Extract & Download</button>
+      <p id="splitMsg" class="muted"></p>
+    </section>
+
+    <!-- Compress PDF (simple re-save) -->
+    <section id="compress" class="card">
+      <h2>Compress PDF</h2>
+      <p>Basic compression by re-saving the file (removes unused objects). Good for quick size reduction.</p>
+      <input id="compFile" type="file" accept="application/pdf" />
+      <button id="btnCompress">Compress & Download</button>
+      <p id="compMsg" class="muted"></p>
+    </section>
+
+    <section class="card">
+      <h3>About Mun Developers</h3>
+      <p>We build simple, fast, and private PDF tools for everyone.</p>
+    </section>
+
+    <footer class="footer">© <span id="year"></span> Mun Developers. All rights reserved.</footer>
+  </main>
+
+  <!-- pdf-lib -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf-lib/1.17.1/pdf-lib.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="script.js"></script>
+</body>
+</html>
